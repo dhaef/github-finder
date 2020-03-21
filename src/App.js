@@ -8,7 +8,7 @@ import Alert from './component/layout/Alert';
 import About from './component/pages/About';
 import axios from 'axios';
 
-import GithubState from './context/github/GithubState'
+import GithubState from './context/github/GithubState';
 
 import './App.css';
 
@@ -63,7 +63,7 @@ const App = () => {
                   clearUsers={clearUsers}
                   showClear={users.length > 0 ? true : false}
                   setAlert={showAlert} />
-                <Users loading={loading} users={users} />
+                <Users />
               </Fragment>
             )} />
             <Route exact path='/about' component={About} />
